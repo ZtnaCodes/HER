@@ -9,7 +9,7 @@ const reasons = [
     "I like the strand of white hair she has on the side of her head, makes it unique that only I can see those small beautiful details :)",
     "THE AMOUNT OF PATIENCE YASMINA HAS !!!!!! she waited for me even though let's face it I FUMBLED THE BAG LIKE A SHIT TON OF TIME LLOL :')",
     "Always thinks abt the future, our future ;) which is SUCH A GREEN FLAG :3",
-    "Yasminti's love language is physical tough too <333333",
+    "Yasminti's love language is physical touch too <333333",
     "Stayed up at night just to listen to me yap abt something that bothers me, might look like nth but I'll never forget such nights ily<3",
     "FREAKY AF (just like me nihahahahaha) mwaaah",
     "Despite all the past she put her trust in me and I promise you I will take care of you, your heart is safe with me bb wlh '-^",
