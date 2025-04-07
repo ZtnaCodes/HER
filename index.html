@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story 💖</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+        header {
+            padding: 50px;
+            font-size: 2em;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .menu button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background: #ff4b5c;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 75, 92, 0.4);
+        }
+        .menu button:hover {
+            background: #ff1e40;
+            box-shadow: 0 5px 20px rgba(255, 30, 64, 0.6);
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: white;
+        }
+        #unique { background: #ff758c; }
+        #letter { background: #ffb199; }
+        #quiz { background: #ffcc99; }
+        .letter-container {
+            color: black;
+            width: 60%;
+            max-width: 600px;
+            height: 250px;
+            margin: auto;
+            background: linear-gradient(135deg, #ff6b81, #ff4757); /* Gradient background */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Soft shadow */
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 2px solid rgba(255, 255, 255, 0.3); /* Soft white border */
+        }
+        #letter-text {
+            color: black;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            background: #ff6b81;
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #a42337;
+        }
+        .quiz-container{
+            color: black;
+            width: 75%;
+            max-width: 600px;
+            height: 400px;
+            margin: auto;
+            background: linear-gradient(135deg, #ff6b81, #ff4757); /* Gradient background */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Soft shadow */
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 2px solid rgba(255, 255, 255, 0.3); /* Soft white border */
+        }
+        #prev{
+            width: 15%;
+            height: 7%;
+            position: relative;
+            bottom: 54%;
+            right: 2%;
+            background: #a42337;
+        }
+        #prev:hover{
+            background-color: #e0455d;
+        }
+        #music-player {
+            /* border: solid black 1px; */
+            height: 100px;
+            width: 200px;
+            position: fixed;
+            top: 84%;
+            left: 0.25%;
+        } 
+        .btn {
+        width: 140px;
+        height: 50px;
+        background: linear-gradient(to top, rgb(161, 32, 51), #c82941, #b22439);
+        color: #fff;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        }
+
+        .btn span {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: top 0.5s;
+        }
+
+        .btn-text-one {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        }
+
+        .btn-text-two {
+        position: absolute;
+        width: 100%;
+        top: 150%;
+        left: 0;
+        transform: translateY(-50%);
+        }
+
+        .btn:hover .btn-text-one {
+        top: -100%;
+        }
+
+        .btn:hover .btn-text-two {
+        top: 50%;
+        }
+        .container {
+        position: relative;
+        margin-top: -100px;
+        width: 360px;
+        }
+
+        .container > * {
+        width: 540px;
+        height: 170px;
+        border: solid 1px #bebebe;
+        background-color: #1f1f1f;
+        position: absolute;
+        border-radius: 10px;
+        padding: 10px;
+        color: #fff;
+        box-shadow: 0px 8px 20px -10px #bbbbbb;
+        text-shadow: 0px 0px 5px #fff;
+        letter-spacing: 1px;
+        background-image: radial-gradient(circle 160px at 50% 120%, #c82941, #b22439);
+        font-size: 25px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        }
+
+        .card1 {
+        width: 500px;
+        margin: -20px 0px 0px 0px;
+        }
+        .card2 {
+        width: 520px;
+        margin: -10px 0px 0px 0px;
+        }
+        .card3{
+            position: block;
+        }
+        .love-reasons {
+            padding: 60px 20px;
+            background: radial-gradient(circle, #1a1a1a, #000);
+            color: white;
+            text-align: center;
+            }
+
+        .intro-text {
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease forwards;
+            color: #ffe6f0;
+            }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+            }
+
+        .reason {
+            opacity: 0;
+            animation: showUp 0.6s ease-out forwards;
+            color: white;
+            text-shadow: 0 0 10px #fff, 0 0 20px #ffb3d9;
+            margin: 20px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            }
+
+        @keyframes showUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+            }
+            @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+        .cursor{
+            position: relative;
+            width: 24em;
+            margin: 0 auto;
+            border-right: 2px solid rgba(255,255,255,.75);
+            font-size: 30px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);    
+        }
+        /* Animation */
+        .typewriter-animation {
+        animation: 
+            typewriter 5s steps(50) 1s 1 normal both, 
+            blinkingCursor 500ms steps(50) infinite normal;
+        }
+        @keyframes typewriter {
+        from { width: 0; }
+        to { width: 100%; }
+        }
+        @keyframes blinkingCursor{
+        from { border-right-color: rgba(255,255,255,.75); }
+        to { border-right-color: transparent; }
+        }
+
+        img{
+            position: relative;
+            left: 225px;
+            display: inline-block;
+            height: 300px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body onload="showPage(), showQuestion()">
+    <header>Welcome to Your Little Corner 💖</header>
+    <div id="music-player">
+        <button class="btn" onclick="playMusic()">
+            <span class="btn-text-one">Click here</span>
+            <span class="btn-text-two">HER :3</span>
+        </button>
+        <audio id="bg-music" src="music/JVKE - her (Live Lyric Video)(MP3_160K).mp3" loop autoplay></audio>
+    </div>
+    <div class="menu">
+        <button onclick="scrollToSection('unique')">🌸 One of a Kind</button>
+        <button onclick="scrollToSection('letter')">💌 Love Letter</button>
+        <button onclick="scrollToSection('quiz')">🎮 Fun Quiz</button>
+    </div>
+    
+    <div id="unique" class="section"> 
+        <div class="container">
+            <div class="card1"></div>
+            <div class="card2"></div>
+            <div class="card3" onclick="nextReason()">
+                <span id="reason-area">Reasons why you are unique yasmina :3.</span>
+            </div>
+        </div>  
+    </div>
+    <div id="letter" class="section">
+        <div class="letter-container">
+            <p id="letter-text"></p>
+            <div class="buttons">
+                <button onclick="prevPage()">⬅️ Previous</button>
+                <button onclick="nextPage()">Next ➡️</button>
+            </div>
+        </div>        
+    </div>
+    <div id="quiz" class="section">
+        <div class="quiz-container">
+            <span id="rights">coded by this mf btw :3</span>
+            <img src="images/ena.jpg" id="ena" alt="INAAAAA">
+            <p id="quiz-question"></p>
+            <button id="prev" onclick="prevQuestion()">Previous</button>
+            <div class="buttons"> 
+                <button onclick="nextQuestion()" value="A-" id="repA"> <span id="answerA"></span></button>
+                <button onclick="nextQuestion()" value="B-" id="repB"><span id="answerB"></span></button>
+                <button onclick="nextQuestion()" value="C-" id="repC"><span id="answerC"></span></button>
+                <button onclick="nextQuestion()" value="D-" id="repD"><span id="answerD"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <section class="love-reasons" id="trigger">
+        <p class="intro-text" class="cursor typewriter-animation">
+          Even after all the letters, pictures, memories…<br>
+          Here’s what I still can’t stop loving about you:
+        </p>
+        <div id="reasons-list"></div>
+      </section>
+      
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        }
+        window.addEventListener("scroll", function() {
+        const targetElement = document.getElementById("trigger");
+        const targetPosition = targetElement.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+        if (targetPosition <= viewportHeight && targetPosition >= 0) {
+            loadContent();
+        }
+    });
+    </script>
+</body>
+</html>
