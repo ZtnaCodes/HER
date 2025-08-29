@@ -4,12 +4,12 @@
 const reasons = [
     "First girl I ever show my true side to :3",
     "Prettiest girl I have ever seen, I've seen her with/without makeup, straight/curly hair, in her best fit/in her pyjamas, with good/bad lighting, outside/inside, sad/happy... I have seen it all and walllahi the prettiest girl EVER in all of her forms!!!!",
-    "I don't feel weird around yasmina, I literally talk abt ANYTHING even stuff I never talk abt by myself, but what can I say I love her more than I love myself now ^_^",
+    "I don't feel weird around _____, I literally talk abt ANYTHING even stuff I never talk abt by myself, but what can I say I love her more than I love myself now ^_^",
     "Really tough and brave girl, went through a lot but came out of it all BY HERSELF and better than ever!",
     "I like the strand of white hair she has on the side of her head, makes it unique that only I can see those small beautiful details :)",
-    "THE AMOUNT OF PATIENCE YASMINA HAS !!!!!! she waited for me even though let's face it I FUMBLED THE BAG LIKE A SHIT TON OF TIME LLOL :')",
+    "THE AMOUNT OF PATIENCE _____ HAS !!!!!! she waited for me even though let's face it I FUMBLED THE BAG LIKE A SHIT TON OF TIME LLOL :')",
     "Always thinks abt the future, our future ;) which is SUCH A GREEN FLAG :3",
-    "Yasminti's love language is physical touch too <333333",
+    "_____'s love language is physical touch too <333333",
     "Stayed up at night just to listen to me yap abt something that bothers me, might look like nth but I'll never forget such nights ily<3",
     "FREAKY AF (just like me nihahahahaha) mwaaah",
     "Despite all the past she put her trust in me and I promise you I will take care of you, your heart is safe with me bb wlh '-^",
@@ -259,3 +259,4 @@ function loadContent() {
         container.appendChild(div);
     });
 }
+
